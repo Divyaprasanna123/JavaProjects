@@ -10,7 +10,7 @@ public class SnakeGame extends JPanel implements ActionListener {
     static final int UNIT_SIZE = 25;
     static final int GAME_UNITS = (WIDTH * HEIGHT) / (UNIT_SIZE * UNIT_SIZE);
 
-    int delay = 150; // 🔥 start slow
+    int delay = 150;
 
     final int x[] = new int[GAME_UNITS];
     final int y[] = new int[GAME_UNITS];
@@ -22,23 +22,58 @@ public class SnakeGame extends JPanel implements ActionListener {
     char direction = 'R';
     boolean running = false;
 
-    javax.swing.Timer timer; // ✅ correct timer
+    javax.swing.Timer timer;
     Random random;
+
+    JButton restartButton; // 🔘 button
 
     SnakeGame() {
         random = new Random();
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         this.setBackground(Color.black);
         this.setFocusable(true);
+        this.setLayout(null); // 🔥 needed for button
         this.addKeyListener(new MyKeyAdapter());
+
+        // 🔘 Restart Button setup
+        restartButton = new JButton("Restart");
+        restartButton.setBounds(220, 380, 150, 40);
+        restartButton.setFocusable(false);
+        restartButton.setVisible(false);
+
+        restartButton.addActionListener(e -> {
+            restartGame();
+            restartButton.setVisible(false);
+            this.requestFocusInWindow();
+        });
+
+        this.add(restartButton);
+
         startGame();
     }
 
     public void startGame() {
+        bodyParts = 6;
+        applesEaten = 0;
+        direction = 'R';
+
         newApple();
         running = true;
+
         timer = new javax.swing.Timer(delay, this);
         timer.start();
+    }
+
+    public void restartGame() {
+        delay = 150;
+
+        for(int i = 0; i < GAME_UNITS; i++) {
+            x[i] = 0;
+            y[i] = 0;
+        }
+
+        restartButton.setVisible(false);
+        startGame();
     }
 
     public void paintComponent(Graphics g) {
@@ -50,7 +85,12 @@ public class SnakeGame extends JPanel implements ActionListener {
 
         if(running) {
 
-            // 🍎 Apple with shine
+            // 🎮 Title
+            g.setColor(Color.YELLOW);
+            g.setFont(new Font("Ink Free", Font.BOLD, 40));
+            g.drawString("Kaatraaj 🐍", 150, 50);
+
+            // 🍎 Apple
             g.setColor(Color.RED);
             g.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
             g.setColor(Color.WHITE);
@@ -59,17 +99,13 @@ public class SnakeGame extends JPanel implements ActionListener {
             // 🐍 Snake
             for(int i = 0; i < bodyParts; i++) {
                 if(i == 0) {
-                    // Head
                     g.setColor(Color.GREEN);
                     g.fillRoundRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE, 10, 10);
 
-                    // Eyes 👀
                     g.setColor(Color.BLACK);
                     g.fillOval(x[i] + 5, y[i] + 5, 5, 5);
                     g.fillOval(x[i] + 15, y[i] + 5, 5, 5);
-
                 } else {
-                    // Body gradient
                     g.setColor(new Color(0, 150 + (i * 2) % 100, 0));
                     g.fillRoundRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE, 10, 10);
                 }
@@ -77,8 +113,8 @@ public class SnakeGame extends JPanel implements ActionListener {
 
             // Score
             g.setColor(Color.white);
-            g.setFont(new Font("Ink Free", Font.BOLD, 30));
-            g.drawString("Score: " + applesEaten, 200, 30);
+            g.setFont(new Font("Ink Free", Font.BOLD, 25));
+            g.drawString("Score: " + applesEaten, 220, 80);
 
         } else {
             gameOver(g);
@@ -110,7 +146,6 @@ public class SnakeGame extends JPanel implements ActionListener {
             applesEaten++;
             newApple();
 
-            // 🔥 increase speed gradually
             if(delay > 50) {
                 delay -= 5;
                 timer.setDelay(delay);
@@ -137,13 +172,15 @@ public class SnakeGame extends JPanel implements ActionListener {
 
     public void gameOver(Graphics g) {
 
-        g.setColor(Color.red);
+        g.setColor(Color.RED);
         g.setFont(new Font("Ink Free", Font.BOLD, 50));
-        g.drawString("Game Over", 150, 300);
+        g.drawString("Game Over", 150, 250);
 
-        g.setColor(Color.white);
+        g.setColor(Color.WHITE);
         g.setFont(new Font("Ink Free", Font.BOLD, 30));
-        g.drawString("Score: " + applesEaten, 220, 350);
+        g.drawString("Score: " + applesEaten, 220, 300);
+
+        restartButton.setVisible(true); // 🔘 show button
     }
 
     @Override
@@ -159,6 +196,11 @@ public class SnakeGame extends JPanel implements ActionListener {
     public class MyKeyAdapter extends KeyAdapter {
         @Override
         public void keyPressed(KeyEvent e) {
+
+            if(!running && e.getKeyCode() == KeyEvent.VK_R) {
+                restartGame();
+            }
+
             switch(e.getKeyCode()) {
                 case KeyEvent.VK_LEFT:
                     if(direction != 'R') direction = 'L';
@@ -181,7 +223,7 @@ public class SnakeGame extends JPanel implements ActionListener {
         SnakeGame gamePanel = new SnakeGame();
 
         frame.add(gamePanel);
-        frame.setTitle("Snake Game");
+        frame.setTitle("Kaatraaj 🐍");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.pack();
