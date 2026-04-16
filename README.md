@@ -599,6 +599,135 @@ Developed a Java-based Student Management System with CRUD operations using Arra
 
 ---
 
+# 6. 🐦 Flappy Bird Game (Java Swing)
+
+## 🎮 Overview
+
+This project is an advanced version of the classic **Flappy Bird game**, developed using **Java Swing**.
+It features realistic physics, smooth controls, and visually enhanced elements like clouds, trees, and ground.
+
+---
+
+## 🚀 Features
+
+* 🐦 Real flappy physics (gravity + jump)
+* ⬆️⬇️⬅️➡️ Arrow key movement
+* 🔘 Restart button (mouse support)
+* ☁️ Moving clouds animation
+* 🌳 Trees and plants for better UI
+* 🟢 Multiple pipes with random heights
+* 📈 Score tracking system
+* 💥 Collision detection
+* 🎨 Full-screen responsive background
+
+---
+
+## 🎮 Controls
+
+* ⬆️ Up Arrow → Jump
+* ⬇️ Down Arrow → Move Down
+* ⬅️ Left Arrow → Move Left
+* ➡️ Right Arrow → Move Right
+* SPACE → Strong Jump
+* Mouse Click → Restart button
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Java Swing
+* AWT
+
+---
+
+## ▶️ How to Run the Project
+
+### 🧑‍💻 Method 1: Using Terminal (Recommended)
+
+1. **Download / Clone the project**
+
+```bash
+git clone https://github.com/your-username/flappy-bird-java.git
+```
+
+2. **Open the project folder**
+
+```bash
+cd flappy-bird-java
+```
+
+3. **Compile the Java file**
+
+```bash
+javac FlappyBird.java
+```
+
+4. **Run the program**
+
+```bash
+java FlappyBird
+```
+
+---
+
+### 💻 Method 2: Without Git (Manual Download)
+
+1. Open the GitHub repository
+2. Click **Code → Download ZIP**
+3. Extract the ZIP file
+4. Open the folder in terminal or IDE
+5. Run:
+
+```bash
+javac FlappyBird.java
+java FlappyBird
+```
+
+---
+
+### 🧑‍🎓 Method 3: Using IDE (Easy way)
+
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open the project folder
+3. Open `FlappyBird.java`
+4. Click **Run ▶️**
+
+---
+
+## 💡 Requirements
+
+* Java JDK 8 or higher
+* Any IDE (optional)
+
+To check Java:
+
+```bash
+java -version
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+* Game loop implementation
+* Event handling in Java
+* Object movement and collision detection
+* GUI design using Swing
+* Basic game physics (gravity, velocity)
+
+---
+
+## 📸 Future Improvements
+
+* 🔊 Sound effects
+* 🐦 Bird animation
+* 🎮 Start menu
+* 🏆 High score saving
+* 🎚️ Difficulty levels
+
+---
+
 ## 👩‍💻 Author
 
 Divya Prasanna
