@@ -1516,6 +1516,134 @@ Next 3 numbers: 6 7 8
 * 🔍 Support for more complex sequences
 
 ---
+# 14. 📊 Array Operations Toolkit (Java)
+
+## 📌 Overview
+
+This project is a **Java-based array utility program** that performs multiple operations on an array.
+It demonstrates important concepts like **array traversal, searching, counting, and manipulation**, which are frequently asked in coding interviews.
+
+---
+
+## 🚀 Features
+
+* ➕ Calculate sum of array elements
+* 🔼 Find maximum element
+* 🔽 Find minimum element
+* 🔢 Count even and odd numbers
+* 🔁 Identify duplicate elements
+* 🥈 Find second maximum element
+* 🔄 Reverse the array
+* 0️⃣ Move all zeros to the end
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Arrays
+* Loops & Conditional Statements
+* Scanner (User Input)
+
+---
+
+## ▶️ How to Run
+
+### 💻 Method 1: Using Terminal
+
+1. Save the file as:
+
+```bash id="d8k1fz"
+Arraybasic.java
+```
+
+2. Compile the program:
+
+```bash id="p4x9rt"
+javac Arraybasic.java
+```
+
+3. Run the program:
+
+```bash id="l0m2qa"
+java Arraybasic
+```
+
+---
+
+### 🧑‍💻 Method 2: Using IDE
+
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open the project folder
+3. Open `Arraybasic.java`
+4. Click **Run ▶️**
+
+---
+
+## 💡 How It Works
+
+1. User inputs:
+
+   * Size of array
+   * Elements of array
+
+2. Program performs:
+
+   * Sum calculation
+   * Max & Min detection
+   * Even/Odd counting
+   * Duplicate detection
+   * Second maximum finding
+   * Array reversal
+   * Moving zeros to end
+
+3. Results are displayed on console
+
+---
+
+## 📊 Example
+
+```text id="g7m1op"
+Input: 1 2 3 4 0 2  
+
+Sum: 12  
+Max: 4  
+Min: 0  
+Even count: 4  
+Odd count: 2  
+Duplicates: 2  
+Second Max: 3  
+Reversed: 2 0 4 3 2 1  
+Zeros moved: 1 2 3 4 2 0
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+* Array manipulation techniques
+* Problem-solving skills
+* Loop optimization
+* Basic data analysis using arrays
+
+---
+
+## ⚠️ Note
+
+* Duplicate detection works only for **adjacent duplicates**
+* Second maximum logic assumes at least 2 elements
+
+---
+
+## 🚀 Future Improvements
+
+* 🔍 Detect all duplicates (not just adjacent)
+* 📊 Sort array before operations
+* 📈 Add searching algorithms (Binary Search)
+* 🎨 GUI version
+* ⚡ Optimize second max logic
+
+---
 
 ## 👩‍💻 Author
 
