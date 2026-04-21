@@ -28,7 +28,7 @@ A premium, feature-rich scientific calculator built with Java Swing.
 ## 📄 License
 This project is open-source under the MIT License.
 
-# 🐍 Snake Game (Java Swing)
+# 1.🐍 Snake Game (Java Swing)
 
 ## 📌 Description
 
@@ -140,116 +140,118 @@ A game window will open where you can play the Snake Game.
 Developed an interactive Snake Game using Java Swing with real-time movement, collision detection, and dynamic speed control.
 
 ---
+# 3.📚 Library Management System (Java)
 
-# 2. 📚 Library Management System (Java)
+## 📌 Overview
 
-## 📌 Description
-
-This is a console-based Library Management System developed using Java.
-It allows users to manage books efficiently by adding, viewing, issuing, returning, and searching books.
+This is a **console-based Library Management System** developed using **Java**.
+It allows users to manage books efficiently by adding, viewing, issuing, returning, and searching for books.
 
 ---
 
 ## 🚀 Features
 
 * ➕ Add new books (ID, Title, Author)
-* 📖 View all available books
-* 📤 Issue books
-* 📥 Return books
-* 🔍 Search books by ID
-* 📊 Track book status (Issued / Available)
+* 📋 View all books
+* 📖 Issue a book
+* 📥 Return a book
+* 🔍 Search book by ID
+* 📊 Book availability status (Issued / Available)
+* ❌ Exit system safely
+
+---
+
+## 🧾 Book Details Stored
+
+* 🆔 Book ID
+* 📘 Title
+* ✍️ Author
+* 📌 Status (Issued / Available)
 
 ---
 
 ## 🛠️ Technologies Used
 
 * Java
-* ArrayList (for storing book data)
-* OOP concepts (Classes & Objects)
-
----
-
-## ⚙️ Requirements
-
-* Java JDK 8 or higher
-* Any IDE (VS Code / IntelliJ / Eclipse) OR terminal
+* ArrayList (Collections)
+* OOP Concepts (Class & Objects)
+* Scanner (User Input)
 
 ---
 
 ## ▶️ How to Run
 
-### 🔹 Step 1: Download the project
+### 💻 Method 1: Using Terminal
 
-**Option A: Clone using Git**
+1. Save the file as:
 
-```bash id="s4axp1"
-git clone https://github.com/your-username/library-management-system.git
-```
-
-**Option B: Download ZIP**
-
-* Click **Code (green button)** on GitHub
-* Click **Download ZIP**
-* Extract the folder
-
----
-
-### 🔹 Step 2: Open project folder
-
-Navigate to the folder containing:
-
-```id="8c8kbt"
+```bash id="kqg9z4"
 LibraryManagementSystem.java
 ```
 
----
+2. Compile the program:
 
-### 🔹 Step 3: Compile the code
-
-Open terminal in that folder and run:
-
-```bash id="p0s2pp"
+```bash id="y7q1ut"
 javac LibraryManagementSystem.java
 ```
 
----
+3. Run the program:
 
-### 🔹 Step 4: Run the program
-
-```bash id="rntmq4"
+```bash id="t0m6nb"
 java LibraryManagementSystem
 ```
 
 ---
 
-## 🖥️ Alternative (Using IDE)
+### 🧑‍💻 Method 2: Using IDE
 
-1. Open project in VS Code / IntelliJ / Eclipse
-2. Open `LibraryManagementSystem.java`
-3. Click **Run ▶️**
-
----
-
-## 📸 Sample Output
-
-```text id="a2rbcy"
-1. Add Book
-2. View Books
-3. Issue Book
-4. Return Book
-5. Search Book
-6. Exit
-```
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open the project folder
+3. Open `LibraryManagementSystem.java`
+4. Click **Run ▶️**
 
 ---
 
-## 💼 Resume Description
+## 💡 How It Works
 
-Developed a Java-based Library Management System with functionalities for adding, issuing, returning, and searching books using OOP principles and ArrayList.
+1. Program displays menu options:
+
+   * Add Book
+   * View Books
+   * Issue Book
+   * Return Book
+   * Search Book
+   * Exit
+
+2. User selects an option
+
+3. System performs the operation
+
+4. Book status is updated dynamically
 
 ---
 
-#  3.🏦 Bank Management System (Java)
+## 🎯 Learning Outcomes
+
+* Java Collections (ArrayList)
+* Object-Oriented Programming (OOP)
+* Menu-driven program design
+* Searching and updating records
+* Handling user input
+
+---
+
+## 🚀 Future Improvements
+
+* 💾 File storage (save books permanently)
+* 🎨 GUI version using Java Swing
+* 🔐 User login system
+* 📊 Book categories & filters
+* 📅 Due date tracking
+
+---
+
+#  4.🏦 Bank Management System (Java)
 
 ## 📌 Description
 
@@ -366,7 +368,7 @@ Developed an advanced Bank Management System in Java with secure PIN-based authe
 
 ---
 
-# 4. ❌⭕ Tic Tac Toe (Java)
+# 5. ❌⭕ Tic Tac Toe (Java)
 
 ## 📌 Description
 
@@ -483,7 +485,7 @@ Developed a console-based Tic Tac Toe game in Java with player turn handling, in
 
 ---
 
-# 5.🎓 Student Management System (Java)
+# 6.🎓 Student Management System (Java)
 
 ## 📌 Overview
 
@@ -606,7 +608,7 @@ students.dat
 
 ---
 
-# 6. 🐦 Flappy Bird Game (Java Swing)
+# 7. 🐦 Flappy Bird Game (Java Swing)
 
 ## 🎮 Overview
 
