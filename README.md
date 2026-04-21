@@ -859,8 +859,134 @@ java RailwayAdvancedUI
 * 📊 Ticket history tracking
 
 ---
+# 9. 🌐 Social Network Friend Suggestion System (Java)
 
+## 📌 Overview
 
+This is a **console-based Social Network application** developed using **Java**.
+It simulates a basic social media platform where users can connect, view friends, and receive **friend suggestions based on mutual connections**.
+
+---
+
+## 🚀 Features
+
+* 👤 Add new users
+* 🤝 Create friendships (bidirectional)
+* 👥 View friends list
+* 💡 Smart friend suggestions (based on mutual friends)
+* 🌐 Display full network using DFS traversal
+* 🔍 Search user details
+* 💾 Save & load network data from file
+* 📊 Ranked suggestions (most mutual friends first)
+
+---
+
+## 🧠 Core Concepts Used
+
+* Graph representation using `Map<String, Set<String>>`
+* DFS (Depth First Search) traversal
+* Sorting based on mutual friend count
+* File handling (Serialization)
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Collections (`HashMap`, `HashSet`, `ArrayList`)
+* File Handling (`ObjectInputStream`, `ObjectOutputStream`)
+* OOP Concepts
+
+---
+
+## ▶️ How to Run
+
+### 💻 Method 1: Using Terminal
+
+1. Save the file as:
+
+```bash id="g7sj3a"
+SocialNetworkFriendSuggestion.java
+```
+
+2. Compile the program:
+
+```bash id="o1p9zd"
+javac SocialNetworkFriendSuggestion.java
+```
+
+3. Run the program:
+
+```bash id="w5l2xk"
+java SocialNetworkFriendSuggestion
+```
+
+---
+
+### 🧑‍💻 Method 2: Using IDE
+
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open project folder
+3. Open `SocialNetworkFriendSuggestion.java`
+4. Click **Run ▶️**
+
+---
+
+## 💡 How It Works
+
+1. Users are stored as nodes in a graph
+
+2. Friendships are stored as connections (edges)
+
+3. System provides options:
+
+   * Add user
+   * Add friendship
+   * View friends
+   * Suggest friends
+   * Show network (DFS)
+   * Search user
+   * Save & Exit
+
+4. Friend suggestions:
+
+   * Based on **mutual friends count**
+   * Sorted in descending order
+
+---
+
+## 📂 Data Storage
+
+* Data is stored in:
+
+```text id="0v2yjd"
+network.dat
+```
+
+* Automatically loaded on restart
+* Ensures data persistence
+
+---
+
+## 🎯 Learning Outcomes
+
+* Graph data structures
+* DFS traversal
+* Ranking & sorting algorithms
+* File handling & serialization
+* Real-world system design
+
+---
+
+## 🚀 Future Improvements
+
+* 🎨 GUI version (Java Swing / JavaFX)
+* 🔐 Login & authentication
+* 📱 Mobile app integration
+* 🌍 Visualization of graph network
+* 🤖 AI-based recommendation system
+
+---
 
 ## 👩‍💻 Author
 
