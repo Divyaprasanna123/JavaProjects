@@ -736,6 +736,131 @@ java -version
 * 🎚️ Difficulty levels
 
 ---
+# 8.🚆 Smart Railway Reservation System (Java)
+
+## 📌 Overview
+
+This is a **console-based Railway Reservation System** developed using **Java**.
+It simulates real-world train ticket booking with features like seat allocation, passenger priority, ticket generation, and cancellation.
+
+---
+
+## 🚀 Features
+
+* 🎫 Book train tickets
+* 👥 Multiple passenger booking (max 5 per ticket)
+* 🧓 Priority-based berth allocation:
+
+  * Lower berth → Senior citizens / physically challenged
+  * Middle / Upper berth → based on age
+* 📊 Seat availability tracking
+* ❌ Cancel ticket using Ticket ID
+* 🚆 Multiple trains support
+* 🪑 Live seat count updates
+* 🔢 Auto-generated Ticket IDs
+
+---
+
+## 🧾 Ticket Details Include
+
+* 🎫 Ticket ID
+* 🚆 Train Name
+* 📍 Source → Destination
+* 📅 Date of journey
+* 👤 Passenger details
+* 🛏️ Berth type (Lower / Middle / Upper)
+* 💺 Seat number
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* ArrayList (Collections)
+* Object-Oriented Programming (OOP)
+* Scanner (User Input)
+
+---
+
+## ▶️ How to Run
+
+### 💻 Method 1: Using Terminal
+
+1. Save the file as:
+
+```bash id="6eh0c1"
+RailwayAdvancedUI.java
+```
+
+2. Compile the program:
+
+```bash id="y1k7t9"
+javac RailwayAdvancedUI.java
+```
+
+3. Run the program:
+
+```bash id="smq3q4"
+java RailwayAdvancedUI
+```
+
+---
+
+### 🧑‍💻 Method 2: Using IDE
+
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open project folder
+3. Open `RailwayAdvancedUI.java`
+4. Click **Run ▶️**
+
+---
+
+## 💡 How It Works
+
+1. System displays options:
+
+   * Book Ticket
+   * Cancel Ticket
+   * View Seats
+   * Exit
+
+2. During booking:
+
+   * Enter travel details (from, to, date)
+   * Select train
+   * Enter passenger details
+   * System assigns berth automatically
+
+3. Ticket is generated with unique ID
+
+4. Users can:
+
+   * Cancel ticket using ID
+   * Check seat availability
+
+---
+
+## 🎯 Learning Outcomes
+
+* Real-world system simulation
+* Java Collections (ArrayList)
+* Object-Oriented Programming
+* Conditional logic & seat allocation
+* Menu-driven application design
+
+---
+
+## 🚀 Future Improvements
+
+* 💾 File/database storage
+* 🎨 GUI version (Java Swing)
+* 🔐 User login system
+* 📱 Mobile app version
+* 📊 Ticket history tracking
+
+---
+
+
 
 ## 👩‍💻 Author
 
