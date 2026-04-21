@@ -1105,6 +1105,278 @@ text.txt
 
 ---
 
+# 11.🔺 Pyramid Patterns Generator (Java)
+
+## 📌 Overview
+
+This is a **menu-driven Java program** that generates different types of **pyramid patterns** using stars (*) and numbers.
+It helps in understanding **loops, pattern logic, and nested iteration concepts**.
+
+---
+
+## 🚀 Features
+
+* ⭐ Star Pyramid
+* 🔻 Reverse Star Pyramid
+* 🔢 Number Pyramid
+* 🔻 Reverse Number Pyramid
+* 🎛️ Menu-driven interface
+* 🔁 Repeat patterns until exit
+
+---
+
+## 🧾 Pattern Types
+
+### ⭐ Star Pyramid
+
+```
+   *
+  ***
+ *****
+*******
+```
+
+### 🔻 Reverse Star Pyramid
+
+```
+*******
+ *****
+  ***
+   *
+```
+
+### 🔢 Number Pyramid
+
+```
+   1
+  121
+ 12321
+1234321
+```
+
+### 🔻 Reverse Number Pyramid
+
+```
+1234321
+ 12321
+  121
+   1
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Scanner (User Input)
+* Nested Loops
+* Conditional Statements
+
+---
+
+## ▶️ How to Run
+
+### 💻 Method 1: Using Terminal
+
+1. Save the file as:
+
+```bash id="n8g1fz"
+pyramids.java
+```
+
+2. Compile the program:
+
+```bash id="z4h7xp"
+javac pyramids.java
+```
+
+3. Run the program:
+
+```bash id="l2q9ka"
+java pyramids
+```
+
+---
+
+### 🧑‍💻 Method 2: Using IDE
+
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open the project folder
+3. Open `pyramids.java`
+4. Click **Run ▶️**
+
+---
+
+## 💡 How It Works
+
+1. User enters a number `n`
+2. Menu is displayed with pattern options
+3. Based on user choice:
+
+   * Corresponding pyramid pattern is printed
+4. Program continues until user exits
+
+---
+
+## 🎯 Learning Outcomes
+
+* Nested loops (important for coding rounds)
+* Pattern generation logic
+* Menu-driven programming
+* Control flow handling
+
+---
+
+## ⚠️ Note
+
+* To exit, choose:
+
+```text id="t1y6kd"
+5
+```
+
+(Current code checks for `6`, which can be fixed for better usability)
+
+---
+
+## 🚀 Future Improvements
+
+* 🎨 GUI version (visual patterns)
+* 🌈 Colored output
+* 🔢 More pattern types
+* 📐 Diamond & Pascal triangle
+
+---
+# 12.🔺 Right Triangle Patterns Generator (Java)
+
+## 📌 Overview
+
+This is a **menu-driven Java program** that generates different types of **right triangle patterns** using numbers and stars.
+It helps in mastering **nested loops and pattern logic**, which are important for coding interviews.
+
+---
+
+## 🚀 Features
+
+* 🔢 Right Triangle with Numbers
+* 🔻 Reverse Right Triangle with Numbers
+* ⭐ Right Triangle with Stars
+* 🔻 Reverse Right Triangle with Stars
+* 🎛️ Menu-driven program
+* 🔁 Runs continuously until user exits
+
+---
+
+## 🧾 Pattern Types
+
+### 🔢 Right Triangle (Numbers)
+
+```id="j1v9a3"
+1
+1 2
+1 2 3
+1 2 3 4
+```
+
+### 🔻 Reverse Number Triangle
+
+```id="9slx8o"
+1 2 3 4
+1 2 3
+1 2
+1
+```
+
+### ⭐ Right Triangle (Stars)
+
+```id="u4b8ks"
+*
+**
+***
+****
+```
+
+### 🔻 Reverse Star Triangle
+
+```id="n3g2wd"
+****
+***
+**
+*
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Scanner (User Input)
+* Nested Loops
+* Conditional Statements
+
+---
+
+## ▶️ How to Run
+
+### 💻 Method 1: Using Terminal
+
+1. Save the file as:
+
+```bash id="k9m2zx"
+righttriangle.java
+```
+
+2. Compile the program:
+
+```bash id="q2w8er"
+javac righttriangle.java
+```
+
+3. Run the program:
+
+```bash id="pl7d5c"
+java righttriangle
+```
+
+---
+
+### 🧑‍💻 Method 2: Using IDE
+
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open the project folder
+3. Open `righttriangle.java`
+4. Click **Run ▶️**
+
+---
+
+## 💡 How It Works
+
+1. User enters a value `n`
+2. Menu is displayed with pattern options
+3. Based on user choice:
+
+   * Corresponding triangle pattern is printed
+4. Program continues until user selects Exit
+
+---
+
+## 🎯 Learning Outcomes
+
+* Nested loops (very important for placements)
+* Pattern generation techniques
+* Menu-driven program design
+* Control flow handling
+
+---
+
+## 🚀 Future Improvements
+
+* 🔺 Add pyramid & diamond patterns
+* 🎨 Colored console output
+* 🖥️ GUI version (Java Swing)
+* 📐 Custom pattern inputs
+
+---
 
 ## 👩‍💻 Author
 
