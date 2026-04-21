@@ -987,6 +987,124 @@ network.dat
 * 🤖 AI-based recommendation system
 
 ---
+# 10.📝 Text Editor with Undo/Redo (Java)
+
+## 📌 Overview
+
+This is a **console-based Text Editor** developed using **Java**.
+It supports advanced features like **Undo/Redo operations, word search, replace functionality, and file handling**, similar to real text editors.
+
+---
+
+## 🚀 Features
+
+* ✍️ Type and append text
+* ❌ Delete last characters
+* ↩️ Undo operation
+* ↪️ Redo operation
+* 📄 Display current text
+* 🔍 Find word in text
+* 🔁 Replace word
+* 💾 Save text to file
+* 📂 Load text from file
+* 🧹 Clear entire text
+
+---
+
+## 🧠 Core Concepts Used
+
+* Stack data structure (`Undo` & `Redo`)
+* String manipulation
+* File handling (Read/Write)
+* Menu-driven programming
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Stack (`java.util.Stack`)
+* File Handling (`FileWriter`, `BufferedReader`)
+* Scanner (User Input)
+
+---
+
+## ▶️ How to Run
+
+### 💻 Method 1: Using Terminal
+
+1. Save the file as:
+
+```bash id="2c9u8a"
+TextEditorUndoRedo.java
+```
+
+2. Compile the program:
+
+```bash id="w8n2p3"
+javac TextEditorUndoRedo.java
+```
+
+3. Run the program:
+
+```bash id="f6x1qz"
+java TextEditorUndoRedo
+```
+
+---
+
+### 🧑‍💻 Method 2: Using IDE
+
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open project folder
+3. Open `TextEditorUndoRedo.java`
+4. Click **Run ▶️**
+
+---
+
+## 💡 How It Works
+
+1. User selects operations from menu
+2. Each text change is stored in **Undo Stack**
+3. Undo → restores previous state
+4. Redo → reapplies undone changes
+5. File operations allow saving/loading text
+
+---
+
+## 📂 File Storage
+
+* Text is saved in:
+
+```text id="n4z6po"
+text.txt
+```
+
+* Automatically created when saving
+* Can be loaded anytime
+
+---
+
+## 🎯 Learning Outcomes
+
+* Stack data structure (real-world use case)
+* Undo/Redo logic implementation
+* File handling in Java
+* String processing
+* Menu-driven system design
+
+---
+
+## 🚀 Future Improvements
+
+* 🎨 GUI version (like Notepad)
+* 🔊 Keyboard shortcuts (Ctrl+Z, Ctrl+Y)
+* 📊 Word count feature
+* 🌙 Dark mode UI
+* 📑 Multiple file support
+
+---
+
 
 ## 👩‍💻 Author
 
