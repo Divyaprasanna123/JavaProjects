@@ -483,119 +483,126 @@ Developed a console-based Tic Tac Toe game in Java with player turn handling, in
 
 ---
 
-# 5. 🎓 Student Management System (Java)
+# 5.🎓 Student Management System (Java)
 
-## 📌 Description
+## 📌 Overview
 
-This is a console-based Student Management System developed using Java.
-It allows users to manage student records by adding, viewing, searching, and deleting student details efficiently.
+This is a **console-based Student Management System** developed using **Java**.
+It allows users to manage student records efficiently, including adding, viewing, searching, deleting, sorting, and storing data using file handling.
 
 ---
 
 ## 🚀 Features
 
-* ➕ Add student (ID, Name, Marks)
-* 📋 View all students
+* ➕ Add multiple students at once
+* 📋 View all student records
 * 🔍 Search student by ID
-* ❌ Delete student
-* 📊 Dynamic data storage using ArrayList
+* ❌ Delete student by ID
+* 📊 Sort students by marks (descending)
+* 💾 Save data to file (`students.dat`)
+* 📂 Load previous data automatically
+* 🔒 Prevent duplicate student IDs
+
+---
+
+## 🧾 Student Details Stored
+
+* 🆔 ID
+* 👤 Name
+* 🏫 Class
+* 📈 Attendance (%)
+* 📝 Marks
 
 ---
 
 ## 🛠️ Technologies Used
 
 * Java
-* ArrayList
-* OOP (Classes & Objects)
-* Iterator (for safe deletion)
-
----
-
-## ⚙️ Requirements
-
-* Java JDK 8 or higher
-* Any IDE (VS Code / IntelliJ / Eclipse) OR terminal
+* Collections (`LinkedList`)
+* File Handling (`ObjectInputStream`, `ObjectOutputStream`)
+* Serialization
 
 ---
 
 ## ▶️ How to Run
 
-### 🔹 Step 1: Download the project
+### 💻 Method 1: Using Terminal
 
-**Option A: Clone using Git**
+1. Save the file as:
 
-```bash id="t5u0a9"
-git clone https://github.com/your-username/student-management-system.git
-```
-
-**Option B: Download ZIP**
-
-* Click **Code (green button)** on GitHub
-* Click **Download ZIP**
-* Extract the folder
-
----
-
-### 🔹 Step 2: Open project folder
-
-Navigate to the folder containing:
-
-```id="w0w5gh"
+```bash id="i7s1n2"
 StudentManagementSystem.java
 ```
 
----
+2. Compile the program:
 
-### 🔹 Step 3: Compile the code
-
-Open terminal in that folder and run:
-
-```bash id="q9zx9b"
+```bash id="q3m8aa"
 javac StudentManagementSystem.java
 ```
 
----
+3. Run the program:
 
-### 🔹 Step 4: Run the program
-
-```bash id="u6pg4y"
+```bash id="6nlqci"
 java StudentManagementSystem
 ```
 
 ---
 
-## 🖥️ Alternative (Using IDE)
+### 🧑‍💻 Method 2: Using IDE
 
-1. Open project in VS Code / IntelliJ / Eclipse
-2. Open `StudentManagementSystem.java`
-3. Click **Run ▶️**
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open project folder
+3. Open `StudentManagementSystem.java`
+4. Click **Run ▶️**
 
 ---
 
-## 📸 Sample Output
+## 💡 How It Works
 
-```text id="d3m6hr"
-1. Add Student
-2. View Students
-3. Search Student
-4. Delete Student
-5. Exit
+1. Program loads existing data from file (`students.dat`)
+2. Displays menu options:
+
+   * Add students
+   * View students
+   * Search student
+   * Delete student
+   * Sort by marks
+   * Save & Exit
+3. User selects operation
+4. Data is updated and saved
+
+---
+
+## 📂 Data Storage
+
+* Data is stored in a file named:
+
+```text id="tz1m2y"
+students.dat
 ```
 
----
-
-## 💼 Resume Description
-
-Developed a Java-based Student Management System with CRUD operations using ArrayList and efficient search and deletion mechanisms.
+* File is automatically created after saving
+* Data persists even after program restart
 
 ---
 
-## 🧠 Concepts Covered
+## 🎯 Learning Outcomes
 
-* Object-Oriented Programming
-* Dynamic data structures (ArrayList)
-* Searching and deletion logic
-* Iterator usage
+* Java Collections (LinkedList)
+* File handling & serialization
+* Menu-driven program design
+* Searching & sorting logic
+* Input validation
+
+---
+
+## 🚀 Future Improvements
+
+* 🎨 GUI version using Java Swing
+* 🔐 Login system
+* 📊 Grade calculation
+* 📁 Export to CSV/Excel
+* 🔍 Advanced search filters
 
 ---
 
