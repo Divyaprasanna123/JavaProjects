@@ -1377,6 +1377,145 @@ java righttriangle
 * 📐 Custom pattern inputs
 
 ---
+#  13.🔍 Series Pattern Analyzer & Predictor (Java)
+
+## 📌 Overview
+
+This project is a **console-based Java application** that analyzes a given number series, identifies its pattern, and predicts future values.
+
+It supports multiple pattern detections such as:
+
+* Arithmetic
+* Multiplication (Geometric)
+* Fibonacci
+* Square numbers
+* Increasing difference
+
+---
+
+## 🚀 Features
+
+* 📥 Accept user-defined number series
+* 📊 Calculate differences between elements
+* 🧠 Detect multiple patterns automatically
+* 🔮 Predict next number
+* 🔢 Predict next 3 numbers
+* 📈 Visualize series using star representation
+* ⚡ Handles multiple pattern types intelligently
+
+---
+
+## 🧠 Patterns Supported
+
+* ➕ Arithmetic Series (constant difference)
+* ✖️ Multiplication Series (constant ratio)
+* 🔢 Fibonacci Series
+* 🔲 Square Numbers
+* 📈 Increasing Difference Series
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Arrays
+* Loops & Conditional Logic
+* Math functions (`Math.sqrt`)
+* Scanner (User Input)
+
+---
+
+## ▶️ How to Run
+
+### 💻 Method 1: Using Terminal
+
+1. Save the file as:
+
+```bash id="7xk2z1"
+newww.java
+```
+
+2. Compile the program:
+
+```bash id="p3m8we"
+javac newww.java
+```
+
+3. Run the program:
+
+```bash id="d9f2kl"
+java hello.newww
+```
+
+---
+
+### 🧑‍💻 Method 2: Using IDE
+
+1. Open **VS Code / IntelliJ / Eclipse**
+2. Open the project folder
+3. Make sure package `hello` is created
+4. Open `newww.java`
+5. Click **Run ▶️**
+
+---
+
+## 💡 How It Works
+
+1. User enters array size and elements
+
+2. Program calculates:
+
+   * Differences between elements
+   * Ratio (for multiplication series)
+
+3. Pattern detection logic:
+
+   * Checks Fibonacci
+   * Checks Square numbers
+   * Checks Multiplication
+   * Checks Arithmetic
+   * Checks Increasing Difference
+
+4. Displays:
+
+   * Detected pattern
+   * Next number
+   * Next 3 numbers
+
+5. Visualizes series using stars
+
+---
+
+## 📊 Example
+
+```text id="9f8m2v"
+Input: 1 2 3 4 5  
+Pattern: Arithmetic Series  
+Next number: 6  
+Next 3 numbers: 6 7 8
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+* Pattern recognition logic
+* Problem-solving skills
+* Arrays & loops mastery
+* Mathematical reasoning
+* Real-world prediction systems
+
+---
+
+## 🚀 Future Improvements
+
+* 🎨 GUI version with charts
+* 📊 Graph visualization
+* 🤖 Machine learning-based pattern detection
+* 📁 File input support
+* 🔍 Support for more complex sequences
+
+---
 
 ## 👩‍💻 Author
 
